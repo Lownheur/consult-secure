@@ -190,30 +190,20 @@ a {
 
 .hero {
   position: relative;
-  min-height: 860px;
-  padding-top: 170px;
-  padding-bottom: 72px;
+  min-height: 100svh;
+  padding-top: 112px;
+  padding-bottom: 32px;
   overflow: hidden;
   background:
     radial-gradient(circle at 85% 18%, rgba(6, 56, 108, 0.09), transparent 30%),
     linear-gradient(180deg, #fff 0%, #f9fbfd 100%);
 }
 
-.hero::before {
-  position: absolute;
-  top: 82px;
-  bottom: 0;
-  left: max(24px, calc((100vw - var(--container)) / 2));
-  width: 1px;
-  background: linear-gradient(var(--line), transparent 82%);
-  content: "";
-}
-
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(430px, 0.96fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(410px, 0.92fr);
   align-items: center;
-  gap: 74px;
+  gap: 64px;
 }
 
 .eyebrow {
@@ -236,6 +226,14 @@ a {
   background: currentColor;
 }
 
+.hero .eyebrow {
+  gap: 0;
+}
+
+.hero .eyebrow span {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -254,7 +252,7 @@ h2 {
 
 h1 {
   max-width: 720px;
-  font-size: clamp(3.15rem, 6vw, 5.65rem);
+  font-size: clamp(3.15rem, 5.3vw, 5.1rem);
 }
 
 h2 {
@@ -331,7 +329,7 @@ h2 em {
 
 .hero-visual {
   position: relative;
-  min-height: 560px;
+  min-height: 490px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 38px;
   overflow: hidden;
@@ -453,12 +451,12 @@ h2 em {
 }
 
 .capability-bar {
-  margin-top: 76px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 23px 30px;
+  padding: 16px 26px;
   border: 1px solid var(--line);
   border-radius: 15px;
   color: var(--grey);
@@ -951,6 +949,21 @@ h2 em {
     padding-block: 88px;
   }
 
+  .hero {
+    min-height: 100svh;
+    padding-top: 118px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .hero-visual,
+  .hero .capability-bar {
+    display: none;
+  }
+
   .brand {
     width: 190px;
   }
@@ -1005,7 +1018,7 @@ h2 em {
   }
 
   .hero {
-    padding-top: 145px;
+    padding-top: 118px;
   }
 
   .hero-grid,
@@ -1069,13 +1082,9 @@ h2 em {
   }
 
   .hero {
-    min-height: auto;
-    padding-top: 124px;
-    padding-bottom: 58px;
-  }
-
-  .hero::before {
-    display: none;
+    min-height: 100svh;
+    padding-top: 94px;
+    padding-bottom: 24px;
   }
 
   h1 {

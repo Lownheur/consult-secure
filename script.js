@@ -5,7 +5,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 
 const closeMenu = () => {
   menuToggle?.setAttribute('aria-expanded', 'false');
-  menuToggle?.setAttribute('aria-label', 'Ouvrir le menu');
+  menuToggle?.setAttribute('aria-label', 'Open menu');
   nav?.classList.remove('is-open');
   document.body.classList.remove('menu-open');
 };
@@ -13,7 +13,7 @@ const closeMenu = () => {
 menuToggle?.addEventListener('click', () => {
   const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
   menuToggle.setAttribute('aria-expanded', String(!isOpen));
-  menuToggle.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+  menuToggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
   nav?.classList.toggle('is-open', !isOpen);
   document.body.classList.toggle('menu-open', !isOpen);
 });

@@ -1,20 +1,20 @@
 # consult-secure
 
-Site vitrine statique et responsive réalisé pour Consult-Secure.
+Static and responsive showcase website created for Consult-Secure.
 
-## Lancer le site
+## Run the website
 
-Ouvrir `index.html` directement dans un navigateur, ou lancer un petit serveur local depuis ce dossier :
+Open `index.html` directly in a browser, or start a small local server from this directory:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Puis ouvrir `http://localhost:8000`.
+Then open `http://localhost:8000`.
 
 ## Structure
 
-- `index.html` : contenu et structure de la page
-- `styles.css` : identité visuelle, mise en page et responsive
-- `script.js` : menu mobile, en-tête et animations d’apparition
-- `assets/` : logos et portraits harmonisés en 800 × 800 px
+- `index.html`: page content and structure
+- `styles.css`: visual identity, layout and responsive rules
+- `script.js`: mobile menu, header behavior and reveal animations
+- `assets/`: logos and portraits standardized to 800 × 800 px
